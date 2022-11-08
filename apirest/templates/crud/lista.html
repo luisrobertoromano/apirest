@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<ul>
+    
+    {% for persona in lista  %}
+    <p>---------------------------------</p>
+    <li>{{persona.apellido}}</li>
+    <li>{{persona.nombre}}</li>
+    <p>---------------------------------</p>        
+    {% endfor %}
+        
+</ul>
+    
+{% endblock content %}
+    
